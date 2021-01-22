@@ -1,0 +1,89 @@
+.image {
+    position: relative;
+    width: 270px;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+    /* height: 100%; */
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+/* .image__overlay--blur {
+    backdrop-filter: blur(5px);
+} */
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+/* Gradient color1 - color2 - color1 */
+
+/* Gradient color1 - color2 - color1 */
+
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+div.skyblue{
+    background-color: #f8fcff;
+}
+
+hr{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
+nav.navbar.mainbar{
+    background-color: black !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  img.stripe-featured{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+  }

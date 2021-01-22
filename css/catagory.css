@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+body{
+   margin: 0;
+}
+
+/* div.container-fluid{
+
+} */
+
+.sidebar{
+   /* position: fixed; */
+   /* position: relative; */
+   /* width: 220px; */
+   /* width: 100%; */
+   padding-left: 10px;
+   top:0;
+   left: 0;
+   bottom: 0;
+   background: rgb(255, 250, 240);
+   padding-top: 50px;
+   overflow-wrap: break-word;
+}
+
+.sidebar h1{
+   display: block;
+   padding: 10px 20px;
+   color: rgb(141, 141, 141);
+   text-decoration: none;
+   font-family: "Rubik";
+   letter-spacing: 2px;
+   font-weight: 400;
+   margin: 0;
+   font-size: 25px;
+   text-transform: uppercase;
+}
+
+.sidebar a{
+   display: block;
+   padding: 10px 20px;
+   color: rgb(141, 141, 141);
+   text-decoration: none;
+   font-family: "Rubik";
+   letter-spacing: 2px;
+}
+
+.sidebar a:hover{
+   color: rgb(3, 3, 3);
+   margin-left: 20px;
+   transition: 0.4s;
+}
+
+h1{
+    color: red;
+    text-align: center;
+}
+
+div.gallary{
+    margin: 20px auto;
+    /* background-color: cyan; */
+}
+
+div.gallary img{
+    /* width: 300px; */
+    width: 100%;
+    padding: 10px;
+    /* filter: grayscale(100%); */
+    transition: 0.2s;
+}
+
+div.gallary img:hover{
+    transform: scale(1.1);
+    /* filter: grayscale(0%); */
+}
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+    & > [class^="col-"],
+    & > [class*=" col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  .hidden{
+      display: none;
+  }
+
+
+  nav.hidden{
+    display: hidden;
+}
+  
+  @media screen and (max-width: 576px) {
+   
+    nav.hidden{
+        display: block;
+        background: rgb(255, 250, 240) !important;
+    }
+
+    div.sidebar{
+        display: none;
+    }
+  }
